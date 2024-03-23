@@ -13,7 +13,7 @@ module.exports = defineConfig({
         index: {
             entry: "./src/pages/index.js",
             filename: 'index.html',
-            template: './index.html',
+            template: './src/pages/index.html',
             title: 'Index',
             chunks: ['chunk-vendors', 'chunk-common', 'index']
         },
@@ -22,18 +22,18 @@ module.exports = defineConfig({
         service: {
             entry: "./src/pages/service.js",
             filename: 'service.html',
-            template: './index.html',
+            template: './src/pages/service.html',
             title: 'Service',
-            chunks: ['chunk-vendors', 'chunk0-common', 'index']
+            chunks: ['chunk-vendors', 'chunk0-common', 'service']
         },
 
         // 天氣頁
         weather: {
             entry: "./src/pages/weather.js",
             filename: 'weather.html',
-            template: './index.html',
+            template: './src/pages/weather.html',
             title: 'Wheater',
-            chunks: ['chunk-vendors', 'chunk0-common', 'index']
+            chunks: ['chunk-vendors', 'chunk0-common', 'weather']
         }
     },
     devServer: {
