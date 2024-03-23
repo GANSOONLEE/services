@@ -11,7 +11,6 @@ module.exports = defineConfig({
     // 首頁
     index: {
         entry: "src/pages/index.js",
-        entry: 'src/pages/index.html',
         template: 'src/pages/template.html',
         filename: 'index.html',
         title: 'Index',
@@ -20,6 +19,14 @@ module.exports = defineConfig({
 
     // 服務頁
     service: {
+        entry: "src/pages/service.js",
+        filename: 'service.html',
+        title: 'Service',
+        chunks: ['chunk-vendors', 'chunk0-common', 'index']
+    },
+
+    // 天氣頁
+    weather: {
         entry: "src/pages/service.js",
         filename: 'service.html',
         title: 'Service',
