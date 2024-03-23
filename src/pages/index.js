@@ -1,30 +1,9 @@
 import { createApp } from 'vue';
-import './style.css';
+import '../style.css';
 
-// Page
-import App from './App.vue';
-import Index from './pages/Index.vue';
-import Service from './pages/Service.vue';
-import Weather from './pages/Weather.vue';
+import Index from './Index.vue';
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes: [
-        {
-            path: '/', component: Index
-        },
-        {
-            path: '/service', component: Service
-        },
-        {
-            path: '/weather', component: Weather
-        },
-    ],
-})
-
-
-const app = createApp(App);
-app.use(router);
+const app = createApp(Index);
 app.mount('#app')
 
 // createApp(App).mount('#app')
