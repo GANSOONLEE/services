@@ -12,7 +12,7 @@ const router = createRouter({
     history: createWebHistory(),
     routes: [
         {
-            path: '/index', component: Index
+            path: '/', component: Index
         },
         {
             path: '/service', component: Service

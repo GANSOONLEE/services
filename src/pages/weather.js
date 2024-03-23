@@ -23,7 +23,7 @@ const router = createRouter({
 })
 
 
-const app = createApp(Service);
+const app = createApp(Weather);
 app.use(router);
 app.mount('#app')
 
