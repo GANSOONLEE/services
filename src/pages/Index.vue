@@ -1,35 +1,59 @@
 
 <script setup>
-    import HelloWorld from '../components/HelloWorld.vue'
+  import ServiceContainer from '../components/ServiceContainer.vue'
 </script>
 
 <template>
 
-    <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://vuejs.org/" target="_blank">
-          <img src="../assets/vue.svg" class="logo vue" alt="Vue logo" />
-        </a>
+  <section class="header_section">
+
+    <h1 style="font-weight: bold">線上服務系統</h1>
+
+    <div class="section_div">
+
+      <h3 class="div_title">請選擇您要的服務</h3>
+
+      <div class="div_div">
+
+        <service-container msg="排程系統" icon="fa fa-calendar" href="#"></service-container>
+  
+        <service-container msg="記賬系統" icon="fa fa-money" href="#"></service-container>
+
+      </div>
+
     </div>
-    
-    <HelloWorld msg="Vite + Vue" />
+
+  </section>
+
 
 </template>
 
 
 <style scoped>
-.logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
+
+  .header_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  .section_div {
+    background-color: rgb(33, 33, 33);
+    border-radius: 1rem;
+    padding: 1rem 4rem 4rem;
   }
-  .logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
+
+  .div_title {
+    font-size: 2rem;
+    color: #7a7a7a;
   }
+
+  .div_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+  }
+
 </style>
